@@ -5,8 +5,10 @@
 
   <!--name表示の追加-->
   <div class="field">
+    <!-- lebel クリック時、入力欄にカーソルが向かう -->
     <%= f.label :name %><br />
-    <%= f.name_field :name, autofocus: true, class: "name" %>
+    <!-- form_forでname_fieldというものは使用できない -->
+    <%= f.text_field :name, autofocus: true, class: "name" %>
   </div>
   <!--name表示の追加-->
 
